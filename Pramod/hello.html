@@ -65,26 +65,27 @@
         border: 3px solid;
         margin-right: 10px;
       }
-      .container {
+      /* .container {
         display: flex;
         justify-content: start;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         background-color: green;
-        width: 100%;
+      } */
+      .container2 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: blue;
       }
-      .container div {
-        width: auto;
-        height: auto;
-      }
-      img {
+      /* img {
         width: 300px;
         height: 200px;
-      }
-      .container .image--1 {
+      } */
+      .image--1 {
         background-color: yellow;
       }
-      .container .image--2 {
+      .image--2 {
         background-color: red;
       }
     </style>
@@ -122,13 +123,21 @@
       <div>9</div>
     </div>
     <p style="color: red">hey!!</p>
-    <div class="container">
+    <div class="container2">
+      <div class="image--1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="image--2">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </div>
+    <!-- <div class="container">
       <div class="image--1">
         <img src="logo.png" alt="logo" />
       </div>
       <div class="image--2">
         <img src="photo.png" alt="photo" />
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
