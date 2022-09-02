@@ -1,1 +1,36 @@
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  background-color: green;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  /* justify-content: flex-start; */
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.img_1 {
+  background-color: aquamarine;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_2 {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(74, 171, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_2 img {
+  height: inherit;
+}
+.img_1 img {
+  height: fit-content;
+}
