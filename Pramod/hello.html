@@ -71,14 +71,21 @@
         align-items: center;
         flex-wrap: wrap;
         background-color: green;
+        width: 100%;
       }
       .container div {
         width: auto;
         height: auto;
       }
       img {
-        width: 200px;
-        height: 150px;
+        width: 300px;
+        height: 200px;
+      }
+      .container .image--1 {
+        background-color: yellow;
+      }
+      .container .image--2 {
+        background-color: red;
       }
     </style>
   </head>
@@ -116,13 +123,12 @@
     </div>
     <p style="color: red">hey!!</p>
     <div class="container">
-      <div class="image--1" style="background-color: red">
+      <div class="image--1">
         <img src="logo.png" alt="logo" />
       </div>
-      <div class="image--2" style="background-color: yellow">
+      <div class="image--2">
         <img src="photo.png" alt="photo" />
       </div>
     </div>
-    <img src="logo.png" alt="" />
   </body>
 </html>
