@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  text-align: center;
+  background-color: aqua;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice {
+  background-color: rgb(198, 55, 55);
+  width: 60%;
+  /* margin: auto; */
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dice1 {
+  background-color: aliceblue;
+  border: 2px solid white;
+  padding: 30px 25px;
+  border-radius: 1rem;
+}
+.dice2 {
+  background-color: aliceblue;
+  border: 2px solid white;
+  padding: 30px 25px;
+  border-radius: 1rem;
+}
