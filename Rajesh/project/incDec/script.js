@@ -1,5 +1,5 @@
-let content = document.querySelector(".content");
-let value = content.innerHTML;
+let content1 = document.querySelector(".content");
+let value = content1.textContent;
 let incNum = document.querySelector(".btn_up");
 let decNum = document.querySelector(".btn_down");
 
@@ -16,12 +16,15 @@ let decNum = document.querySelector(".btn_down");
 
 //-------------ON KEY PRESS-------------//
 document.addEventListener("keydown", function (e) {
-  if ((e.key = "ArrowUp")) {
-    content.textContent = value++;
+  console.log(e);
+  if (e.key == "ArrowUp") {
+    content1.textContent = ++value;
   }
 });
 document.addEventListener("keydown", function (e) {
-  if ((e.key = "ArrowDown")) {
-    content.textContent = --value;
+  if (e.key == "ArrowDown") {
+    value > 0
+      ? (content1.textContent = --value)
+      : (content1.textContent = value);
   }
 });
