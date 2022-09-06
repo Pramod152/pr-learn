@@ -1,12 +1,11 @@
-var contentc = document.querySelector(".content1");
-var btnMinus = document.querySelector(".minus");
-var btnPlus = document.querySelector(".plus");
+let contentc = document.querySelector(".content1");
+let btnMinus = document.querySelector(".minus");
+let btnPlus = document.querySelector(".plus");
 
-var score = contentc.textContent;
-// contentc.textContent = score;
-btnMinus.addEventListener("click", function () {
-  score > 0 ? (contentc.textContent = score--) : (contentc.textContent = score);
-});
+let score = contentc.textContent;
 btnPlus.addEventListener("click", function () {
-  contentc.textContent = score++;
+  contentc.textContent = ++score;
+});
+btnMinus.addEventListener("click", function () {
+  score > 0 ? (contentc.textContent = --score) : (contentc.textContent = score);
 });
