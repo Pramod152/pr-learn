@@ -17,15 +17,13 @@ let value = content.textContent;
 
 //-------------ON KEY PRESS-------------//
 document.addEventListener("keydown", function (e) {
-  console.log(e);
+  // console.log(e);
   if (e.key == "ArrowUp") {
-    content1.textContent = ++value;
+    content.textContent = ++value;
   }
 });
 document.addEventListener("keydown", function (e) {
   if (e.key == "ArrowDown") {
-    value > 0
-      ? (content1.textContent = --value)
-      : (content1.textContent = value);
+    value > 0 ? (content.textContent = --value) : (content.textContent = value);
   }
 });
