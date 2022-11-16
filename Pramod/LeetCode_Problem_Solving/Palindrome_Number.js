@@ -7,5 +7,4 @@ var isPalindrome = function (x) {
     return true;
   }
 };
-const bul = isPalindrome(11111111100010101);
-console.log(bul);
+isPalindrome("madam");
