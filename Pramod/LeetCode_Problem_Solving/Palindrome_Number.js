@@ -1,10 +1,9 @@
-var isPalindrome = function (x) {
-  let arr = x.split("");
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== arr[arr.length - 1 - i]) {
-      return false;
-    }
+const Palindrome = (x) => {
+  const reversed = x.split("").reverse().join("");
+
+  if (x === reversed) {
     return true;
   }
+  return false;
 };
-isPalindrome("madam");
+console.log(Palindrome("122221"));
