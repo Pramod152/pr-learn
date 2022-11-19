@@ -6,4 +6,4 @@ const Palindrome = (x) => {
   }
   return false;
 };
-console.log(Palindrome("122221"));
+Palindrome("hannah");
