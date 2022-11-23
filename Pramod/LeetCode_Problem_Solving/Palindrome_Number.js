@@ -7,3 +7,9 @@ const Palindrome = (x) => {
   return false;
 };
 Palindrome("hannah");
+
+str1 = "pramod";
+arr1 = str1.split("");
+arr1.array.forEach((element) => {
+  p;
+});
