@@ -1,15 +1,17 @@
-// Find the similar letters from an array
+// Find the similar letters from an array of strings
 
-const simLetter = (x, stringObj = {}) => {
+const simLetter = (x) => {
+  const strObj = {};
   for (const [i, value] of x.entries()) {
-    stringObj[i] = value;
+    strObj[i] = value.split("");
   }
-  console.log(stringObj);
+  let newStr = strObj[0];
+  for (let obj in strObj) {
+    obj = Number(obj);
+    if (obj === x.length - 1) return newStr;
+    newStr = newStr.filter((el) => strObj[obj + 1].find((val) => val === el));
+  }
 };
-simLetter(["pramod", "ghimire", "rajesh"]);
-
-// const stringObj = {
-//   0: "pramod",
-//   1: "ghimire",
-//   2: [],
-// };
+console.log(simLetter(["pramod", "ghimire", "rajesh", "pandey"]));
+console.log(simLetter(["flower", "flow", "friend", "forget"]));
+console.log(simLetter(["flower", "flow"]));
