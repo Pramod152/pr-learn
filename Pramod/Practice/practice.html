@@ -6,25 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
+      /* center a div horizontally using margin: 0 auto */
       .container1 {
+        margin: 25px;
+        width: 350px;
+        height: 200px;
+        outline: solid 2px black;
+      }
+      .child1 {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
         background-color: red;
+      }
+      /* center a div horizontally using flexbox */
+      .container2 {
+        margin: 25px;
+        width: 350px;
+        height: 200px;
+        /* center child horizontally */
+        display: flex;
+        justify-content: center;
+        outline: solid 2px black;
+      }
+      .child2 {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+      /* center a div vertically using old fashioned technique  */
+      .container3 {
+        margin: 25px;
+        width: 350px;
+        height: 200px;
+        /* setup */
+        position: relative;
+        outline: solid 2px black;
+      }
+      .child3 {
+        width: 50px;
+        height: 50px;
+        /* center vertically ---old fashioned */
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        background-color: red;
+      }
+      /* center a div vertically using felxbox */
+      .container4 {
+        margin: 25px;
+        width: 350px;
+        height: 200px;
+        /* center child vertically */
+        display: flex;
+        align-items: center;
+        outline: solid 2px black;
+      }
+      .child4 {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+      .container5 {
+        margin: 25px;
+        width: 400px;
+        height: 400px;
+        /* center child vertically */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: solid 2px black;
+      }
+      .child5 {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+      }
+      img.childd {
+        vertical-align: middle;
+      }
+      .centers {
+        outline: solid 2px black;
+        margin: 25px;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
+      form input {
+        margin: 10px;
+      }
+      * {
+        margin: 0;
+      }
+      .fir {
+        background-color: rgb(139, 185, 187);
+        height: 50vh;
+        width: 100%;
+        position: relative;
+      }
+      .page1 {
+        position: absolute;
+        background-color: whitesmoke;
+        width: 60%;
+        height: 50%;
+        left: 20%;
+        top: 20%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
       }
-      .image {
-        background-color: green;
+
+      button {
+        border-radius: 10px;
+        height: 40px;
+      }
+
+      .sec {
+        background-color: rgb(195, 214, 179);
+        height: 50vh;
+        width: 100%;
+        position: relative;
+      }
+      .another {
+        position: absolute;
+        background-color: black;
+        height: 50%;
+        width: 20rem;
+        left: 40%;
+        top: 25%;
+        display: flex;
+      }
+      .another > div {
+        flex: 50%;
+        background-color: aliceblue;
       }
     </style>
   </head>
   <body>
-    <div class="container1">
-      <div class="image">hey</div>
-      <div class="image">hii</div>
+    <!-- <div class="container1">
+      <div class="child1"></div>
     </div>
+    <div class="container2">
+      <div class="child2"></div>
+    </div>
+    <div class="container3">
+      <div class="child3"></div>
+    </div>
+    <div class="container4">
+      <div class="child4"></div>
+    </div>
+    <div class="container5">
+      <div class="child5"></div>
+    </div>
+
+    <div class="parent">
+      <p>This is <img class="childd" src="logo.png" alt="logo" /> picture</p>
+    </div>
+    <div class="centers">
+      <form class="centering">
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </form>
+    </div> -->
+
+    <main class="fir">
+      <section class="page1">
+        <button>New Game</button>
+        <button>New Game</button>
+        <button>New Game</button>
+        <button>New Game</button>
+        <button>New Game</button>
+      </section>
+    </main>
+    <main class="sec">
+      <section class="another">
+        <div>hey</div>
+        <div>yes</div>
+      </section>
+    </main>
   </body>
+  <script src="script.js"></script>
 </html>
