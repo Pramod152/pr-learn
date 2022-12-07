@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>XYZ college</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .head_container {
-        height: 10vh;
-        background-color: rgb(139, 139, 213);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
 
-      .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 10vh;
-        width: 60%;
-      }
-      .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .nav_list {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 70%;
-        height: 10vh;
-      }
-      .nav_list a {
-        text-decoration: none;
-      }
-      .logo > img {
-        height: 100px;
-      }
-      .nav_list a {
-        font-size: 2rem;
-        color: white;
-        padding: 20px;
-      }
-      .nav_list a:hover {
-        color: blue;
-        background-color: brown;
-      }
-      .nav_list a:active {
-        /* voli */
-        border-bottom: 5px solid black;
-        color: green;
-      }
-      .section1 {
-        height: 60vh;
-        background-color: gray;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <header class="head_container">
-      <div class="nav">
-        <div class="logo"><img src="clz_logo.png" alt="Logo" /></div>
-        <div class="nav_list">
-          <a class="active" href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="applyonline.html">Apply Online</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XYZ college</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .head_container {
+      height: 10vh;
+      background-color: rgb(139, 139, 213);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+      width: 60%;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav_list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
+      height: 10vh;
+    }
+
+    .nav_list a {
+      text-decoration: none;
+    }
+
+    .logo>img {
+      height: 100px;
+    }
+
+    .nav_list a {
+      font-size: 2rem;
+      color: white;
+      padding: 20px;
+    }
+
+    .nav_list a:hover {
+      color: blue;
+      background-color: brown;
+    }
+
+    .nav_list a:active {
+      /* voli */
+      border-bottom: 5px solid black;
+      color: green;
+    }
+
+    .section1 {
+      height: 70vh;
+      background-color: gray;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="head_container">
+    <div class="nav">
+      <div class="logo"><img src="clz_logo.png" alt="Logo" /></div>
+      <div class="nav_list">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="applyonline.html">Apply Online</a>
       </div>
-    </header>
-
-    <div class="section1">
-      <section class="carasoul">
-        <h1>this is carasoul</h1>
-      </section>
     </div>
+  </header>
 
-    <hr />
+  <div class="section1">
+    <section class="carasoul">
+      <h1>this is carasoul</h1>
+    </section>
+  </div>
+
+  <!-- <hr />
     <div class="aboutUs">
       <h1>About Us</h1>
 
@@ -94,33 +105,55 @@
         sunt mollitia quam ratione obcaecati odit vero fuga adipisci ipsa quis
         assumenda.
       </p>
-    </div>
+    </div> -->
 
-    <div class="qualification">
-      <h1>why choose us</h1>
+  <section>
+    <div class="about_container">
+      <div class="holder">
+        <div>
+          <img src="" alt="Img" />
+        </div>
+        <div>
+          <div class="aboutUs">
+            <h1>About Us</h1>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum culpa
-        beatae consequuntur suscipit voluptates fugit nam repellat, laudantium
-        sunt mollitia quam ratione obcaecati odit vero fuga adipisci ipsa quis
-        assumenda.
-      </p>
-
-      <div class="mmessage">
-        <h2>message from director</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum culpa
+              beatae consequuntur suscipit voluptates fugit nam repellat, laudantium
+              sunt mollitia quam ratione obcaecati odit vero fuga adipisci ipsa quis
+              assumenda.
+            </p>
+          </div>/div>
+        </div>
       </div>
-    </div>
+  </section>
 
-    <div class="quote">
-      <h3>join today for better tomorrow</h3>
-    </div>
+  <div class="qualification">
+    <h1>why choose us</h1>
 
-    <div class="gallary">
-      <h2>photos</h2>
-    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum culpa
+      beatae consequuntur suscipit voluptates fugit nam repellat, laudantium
+      sunt mollitia quam ratione obcaecati odit vero fuga adipisci ipsa quis
+      assumenda.
+    </p>
 
-    <footer class="container">
-      <p>footer</p>
-    </footer>
-  </body>
+    <div class="mmessage">
+      <h2>message from director</h2>
+    </div>
+  </div>
+
+  <div class="quote">
+    <h3>join today for better tomorrow</h3>
+  </div>
+
+  <div class="gallary">
+    <h2>photos</h2>
+  </div>
+
+  <footer class="container">
+    <p>footer</p>
+  </footer>
+</body>
+
 </html>

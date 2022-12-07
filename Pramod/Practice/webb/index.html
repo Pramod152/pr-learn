@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+      .nav_container {
+        background-color: rgb(242, 240, 247);
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 13vh;
+        background: rgba(20, 18, 168, 0);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid rgba(255, 255, 255, 0.096);
+      }
+
+      .logo_container img {
+        object-fit: contain;
+        height: 150px;
+        width: 100px;
+      }
+      .nav_item_container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 80%;
+        height: 100px;
+      }
+      .nav_item_container a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: rgb(12, 12, 12);
+      }
+      .nav_items {
+        display: flex;
+        justify-content: space-around;
+        width: 55%;
+      }
+      .section1 {
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+      }
+      .image_container {
+        background-color: beige;
+        height: inherit;
+        background-image: url("cover_clz.jpg");
+        width: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .notice {
+        height: inherit;
+        width: 30%;
+        background-color: rgb(20, 9, 109);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+      }
+      .notice_content h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: red;
+        font-size: 3rem;
+      }
+      .notice_content ul li {
+        padding: 20px 10px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100%;
+        background-color: rgba(139, 163, 183, 0.39);
+      }
+      .notice_content ul {
+        width: 529px;
+        list-style-type: none;
+      }
+      .notice_content ul li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: rgba(238, 235, 235, 0.448);
+      }
+      .button_pagination button {
+        padding: 15px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      .active {
+        background-color: rgb(248, 131, 131);
+        color: rgb(251, 251, 251);
+      }
+      .aboutUs {
+        height: 60vh;
+        background-color: rgba(242, 234, 234, 0.629);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .about_img img {
+        object-fit: cover;
+        height: 370px;
+        box-shadow: 23px 25px 39px -12px rgba(0, 0, 0, 0.58);
+        -webkit-box-shadow: 23px 25px 39px -12px rgba(0, 0, 0, 0.58);
+        -moz-box-shadow: 23px 25px 39px -12px rgba(0, 0, 0, 0.58);
+        border-radius: 5px;
+      }
+      .child {
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+      }
+      .about_content {
+        font-size: x-large;
+        padding: 20px;
+        width: 100%;
+        margin: 10px;
+      }
+      .about_content h1 {
+        margin-bottom: 9px;
+      }
+      .about_content p {
+        text-indent: 50px;
+        text-align: justify;
+      }
+      .why_Choose_section {
+        height: 80vh;
+        background-color: rgba(156, 6, 6, 0.88);
+      }
+      .qualification_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+        gap: 40px 40px;
+      }
+      .why_Choose_section h1 {
+        margin-left: 270px;
+        padding: 20px;
+        font-size: xx-large;
+        color: rgba(251, 251, 251, 0.891);
+      }
+      .qualification_container div {
+        border-radius: 20px;
+        height: 30vh;
+        width: 750px;
+        background-color: #22376f;
+        border: 0.1px solid rgba(255, 255, 255, 0.468);
+        box-shadow: 1px 1px 9px 1px #ffffff;
+        text-align: center;
+        word-break: keep-all;
+        padding: 50px;
+        color: rgba(255, 250, 250, 0.781);
+      }
+      .qualification_container div h2 {
+        padding: 20px;
+      }
+      .pen {
+        object-fit: contain;
+        width: 100%;
+      }
+      .massage {
+        background-image: url("pen.jpg");
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .message_container {
+        background: rgba(240, 233, 233, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(30, 31, 31, 0.37);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        height: 23vh;
+        width: 760px;
+        position: relative;
+        top: 40%;
+        left: 30%;
+        color: white;
+      }
+      .message_container img {
+        position: absolute;
+        height: 150px;
+        top: -15%;
+        left: -9%;
+        opacity: 0.8;
+        border-radius: 20px;
+      }
+      .message_from_me {
+        padding-left: 100px;
+      }
+      .message_from_me h3 {
+        padding: 20px 0px;
+      }
+      .message_from_me h1 {
+        padding-top: 20px;
+      }
+      .form_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+      }
+      .form_container {
+        background-color: rgb(3, 3, 94);
+        height: 50vh;
+        width: 500px;
+        border-radius: 60px;
+      }
+      .form_container form {
+        background: rgb(226, 224, 224);
+        /* box-shadow: 0 8px 32px 0 rgba(30, 31, 31, 0.37); */
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border-radius: 46px;
+        border: 0px solid rgb(255, 255, 255);
+        height: inherit;
+        padding: 55px 100px;
+      }
+      .form_container form input {
+        width: 250px;
+        padding: 7px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px;
+      }
+      .form_container form textarea {
+        border-radius: 10px;
+        border: none;
+
+        margin: 10px;
+      }
+      .form_container form button {
+        padding: 15px;
+        margin: -11px 57px 11px 66px;
+        border-radius: 18px;
+        width: 113px;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      .footer-distributed {
+        background-color: #292c2f;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font: bold 16px sans-serif;
+        padding: 34px 200px;
+        margin-top: 80px;
+        height: 45vh;
+      }
+      footer.footer-distributed {
+        padding-top: 100px;
+      }
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      /* Footer left */
+
+      .footer-distributed .footer-left {
+        width: 40%;
+      }
+
+      /* The company logo */
+      .footer-distributed .footer-left img {
+        width: 120px;
+        height: 100px;
+      }
+
+      /* Footer links */
+
+      .footer-distributed .footer-links {
+        color: #ffffff;
+        margin: 20px 0 12px;
+        padding: 0;
+      }
+
+      .footer-distributed .footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .footer-distributed .footer-company-name {
+        color: #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      /* Footer Center */
+
+      .footer-distributed .footer-center {
+        width: 35%;
+      }
+
+      .footer-distributed .footer-center i {
+        background-color: #33383b;
+        color: #ffffff;
+        font-size: 25px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 42px;
+        margin: 10px 15px;
+        vertical-align: middle;
+      }
+
+      .footer-distributed .footer-center i.fa-envelope {
+        font-size: 17px;
+        line-height: 38px;
+      }
+
+      .footer-distributed .footer-center p {
+        display: inline-block;
+        color: #ffffff;
+        vertical-align: middle;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-center p span {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .footer-distributed .footer-center p a {
+        color: #5383d3;
+        text-decoration: none;
+      }
+
+      /* Footer Right */
+
+      .footer-distributed .footer-right {
+        width: 20%;
+      }
+
+      .footer-distributed .footer-company-about {
+        line-height: 20px;
+        color: #92999f;
+        font-size: 13px;
+        font-weight: normal;
+        margin: 0;
+      }
+
+      .footer-distributed .footer-company-about span {
+        display: block;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .footer-distributed .footer-icons {
+        margin-top: 25px;
+      }
+
+      .footer-distributed .footer-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        background-color: #33383b;
+        border-radius: 2px;
+
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 35px;
+
+        margin-right: 3px;
+        margin-bottom: 5px;
+      }
+
+      @media (max-width: 880px) {
+        .footer-distributed {
+          font: bold 14px sans-serif;
+        }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+
+        .footer-distributed .footer-center i {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="nav_container">
+        <nav class="container">
+          <div class="logo_container">
+            <img src="logo_vedas.png" alt="Logo" />
+          </div>
+          <div class="nav_item_container">
+            <div class="nav_items">
+              <a href="#">Home</a>
+              <a href="#">About Us</a>
+              <a href="#">Programs</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="section1">
+        <div class="notice">
+          <div class="notice_content">
+            <h1>Notices</h1>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+          </div>
+          <div class="button_pagination">
+            <button>&laquo</button>
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>&raquo</button>
+          </div>
+        </div>
+        <div class="image_container"></div>
+      </section>
+    </main>
+    <section class="aboutUs">
+      <div class="child">
+        <div class="about_img">
+          <img src="about_clz.jpg" alt="image" />
+        </div>
+        <div class="about_content">
+          <h1>Welcome to Vedas College</h1>
+          <p>
+            To be leading institute for IT and Management, education in Nepal by
+            nurturing an innovation-embracing learning environment. To be home
+            to global leaders in IT and Management. Vedas College is inarguably
+            the best IT and Management College in the country today. Centrally
+            located at Jawalakhel, Vedas College with its state-of-art
+            infrastructure and expert faculty, stands as the ideal learning
+            environment for the students to receive technical education and
+            professional grooming and secure a bright future in the competetive
+            global mark... see more
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="why_Choose_section">
+      <h1>WHY CHOOSE US?</h1>
+      <div class="qualification_container">
+        <div class="education">
+          <h2>QUALITY EDUCATION</h2>
+          <p>
+            Our dedicated and experienced faculty delivers excellent
+            teaching-learning. Tutors supervise academic performance, interact
+            with students, and give needed guidance. In order to maintain and
+            upgrade its benchmarks, KIST supports ongoing professional
+            development and training of its teachers.
+          </p>
+        </div>
+        <div class="ambitions">
+          <h2>ACHIEVE YOUR AMBITIONS</h2>
+          <p>
+            A particularly high proportion of students at all levels
+            successfully progress on to appropriate and sustainable further or
+            higher education or to employment.
+          </p>
+        </div>
+        <div class="guidance">
+          <h2>EXPERT SUPPORT AND GUIDANCE</h2>
+          <p>
+            Our staff will help you choose the courses that are right for you
+            and they will help you complete your studies successfully. Your
+            choice of course may be influenced by your future study and career
+            plans; by your abilities, qualifications and experience; by your
+            interests and your preferred style of learning. You might also need
+            information and advice on a range of other issues including
+            financial advice or study support.
+          </p>
+        </div>
+        <div class="facilities">
+          <h2>FACULTIES AND FACILITIES</h2>
+          <p>
+            We have invested over £20 million in our college facilities over the
+            past ten years. Our students learn in a modern and dynamic
+            environment, using new technology and specialist equipment to
+            enhance their studies. Our fantastic campus and facilities mean we
+            can also offer a wide range of interesting and inspiring enrichment
+            activities
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="massage">
+      <div class="message_container">
+        <img src="_photo.jpg" alt="my photo" />
+        <div class="message_from_me">
+          <h1>Message from Professor</h1>
+          <h3>Pramod Ghimire</h3>
+          <p>
+            Vedas College is inarguably the best IT and Management College in
+            the country today. Centrally located at Jawalakhel, Vedas College
+            with its state-of-art infrastructure and expert faculty, stands as
+            the ideal learning environment for the students to receive technical
+            education and professional grooming and secure a bright future in
+            the competetive global market.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="form_section">
+      <div class="form_container">
+        <form action="index.html">
+          <label for="fullName"> FullName</label> <br />
+          <input type="text" name="fullName" id="fullName" /> <br /><br />
+          <label for="email">Email Address</label><br />
+          <input type="email" name="email" id="email" /><br /><br />
+          <label for="feedback">Write a message</label> <br />
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <br /><br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <div class="logo_container">
+          <img src="logo_vedas.png" alt="college_logo" />
+        </div>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Vedas College &copy; 2010</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Jawalakhel</span> Lalitpur, Nepal</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>01-2345678</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a
+              href="/cdn-cgi/l/email-protection#deadabaeaeb1acaa9ebdb1b3aebfb0a7f0bdb1b3"
+            >
+              <span
+                class="__cf_email__"
+                data-cfemail="12616762627d606652717d7f62737c6b3c717d7f"
+                >info@vedascollege.edu.np</span
+              ></a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
