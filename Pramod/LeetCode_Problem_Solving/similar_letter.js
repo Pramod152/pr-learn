@@ -12,6 +12,6 @@ const simLetter = (x) => {
     newStr = newStr.filter((el) => strObj[obj + 1].find((val) => val === el));
   }
 };
-console.log(simLetter(["pramod", "ghimire", "rajesh", "pandey"]));
-console.log(simLetter(["flower", "flow", "friend", "forget"]));
-console.log(simLetter(["flower", "flow"]));
+// console.log(simLetter(["pramod", "ghimire", "rajesh", "pandey"]));
+// console.log(simLetter(["flower", "flow", "friend", "forget"]));
+console.log(simLetter(["fl", "f"]));
