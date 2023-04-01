@@ -1,0 +1,5 @@
+{
+    name: 'Pramod Ghimire',
+    age: 22,
+    email: 'pramodghimire96@gmail.com'
+}
