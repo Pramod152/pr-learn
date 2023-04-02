@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      @media screen and (min-width: 520px) {
+        .main {
+          height: 5vh;
+          display: flex;
+          background-color: rgba(248, 247, 247, 0.812);
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .main > div {
+          border: none;
+          display: flex;
+        }
+
+        .left {
+          width: 20%;
+        }
+
+        .middle {
+          width: 60%;
+        }
+
+        .right {
+          width: 20%;
+        }
+
+        .logo {
+          height: 100%;
+        }
+
+        .logo img {
+          height: 100%;
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+        }
+
+        .search_container {
+          position: relative;
+        }
+
+        input[type="text"] {
+          width: 86%;
+          height: 44px;
+          padding: 8px 35px;
+          margin: 9px 0;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 20px;
+          font-size: 20px;
+        }
+
+        .search_container .material-icons {
+          position: absolute;
+          top: 20%;
+          left: 1%;
+          font-size: 40px;
+        }
+
+        .material-icons {
+          color: #aaa;
+          font-size: 34px;
+        }
+
+        .middle {
+          border: 1px solid black;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: space-around;
+          flex-direction: row;
+        }
+
+        .contain {
+          width: 48%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .contain .active {
+          border-bottom: 1px solid red;
+          padding-bottom: 10px;
+        }
+
+        .right {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .right .edit > div {
+          border-radius: 50%;
+          /* background-color: rgb(228, 194, 152); */
+        }
+
+        .right .edit > div .material-icons {
+          font-size: 32px;
+          border-radius: 50%;
+        }
+
+        .edit {
+          display: flex;
+          width: 71%;
+          justify-content: space-around;
+        }
+
+        .profile {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+        }
+
+        .profile img {
+          height: 34px;
+          width: 34px;
+          border-radius: 50%;
+        }
+      }
+
+      @media screen and (max-width: 520px) {
+        .main {
+          height: 5vh;
+          display: flex;
+          background-color: rgba(248, 247, 247, 0.812);
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .main > div {
+          border: none;
+          display: flex;
+        }
+
+        .left {
+          width: 20%;
+        }
+
+        .middle {
+          width: 60%;
+        }
+
+        .right {
+          width: 20%;
+        }
+
+        .logo {
+          height: 100%;
+        }
+
+        .logo img {
+          height: 100%;
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .left {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+        }
+
+        .search_container {
+          position: relative;
+        }
+
+        input[type="text"] {
+          width: 86%;
+          height: 44px;
+          padding: 8px 35px;
+          margin: 9px 0;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 20px;
+          font-size: 20px;
+        }
+
+        .search_container .material-icons {
+          position: absolute;
+          top: 20%;
+          left: 1%;
+          font-size: 40px;
+        }
+
+        .material-icons {
+          color: #aaa;
+          font-size: 34px;
+        }
+
+        .middle {
+          border: 1px solid black;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: space-around;
+          flex-direction: row;
+        }
+
+        .contain {
+          width: 48%;
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .contain .active {
+          border-bottom: 1px solid red;
+          padding-bottom: 10px;
+        }
+
+        .right {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        .right .edit > div {
+          border-radius: 50%;
+          /* background-color: rgb(228, 194, 152); */
+        }
+
+        .right .edit > div .material-icons {
+          font-size: 32px;
+          border-radius: 50%;
+        }
+
+        .edit {
+          display: flex;
+          width: 71%;
+          justify-content: space-around;
+        }
+
+        .profile {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+        }
+
+        .profile img {
+          height: 34px;
+          width: 34px;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main">
+      <div class="lef">
+        <div class="left">
+          <div class="logo">
+            <img src="./f_logo_RGB-Blue_58.png" alt="Fb logo" />
+          </div>
+          <form action="post" class="search_container">
+            <span class="material-icons">search </span>
+            <input type="text" placeholder="Search facebook" />
+          </form>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="contain">
+          <span class="material-icons active"> home </span>
+          <span class="material-icons"> video_library </span>
+          <span class="material-icons"> storefront </span>
+          <span class="material-icons"> groups </span>
+        </div>
+      </div>
+      <div class="right">
+        <div class="edit">
+          <div><span class="material-icons"> apps </span></div>
+          <div><span class="material-icons"> message </span></div>
+          <div><span class="material-icons"> notifications </span></div>
+          <div class="profile"><img src="pramod.jpg" alt="loho" /></div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

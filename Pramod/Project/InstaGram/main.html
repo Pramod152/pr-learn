@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Instagram</title>
+    <style>
+      body {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        width: 90%;
+        margin: 5px;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid
+          rgb(183, 183, 183);
+        /* height: 17px; */
+      }
+
+      #username,
+      #password {
+        background-color: rgba(
+          235,
+          235,
+          235,
+          0.076
+        );
+      }
+
+      #log_in {
+        background-color: rgba(
+          54,
+          188,
+          246,
+          0.928
+        );
+        height: 35px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: white;
+      }
+
+      .fb_logo {
+        height: 20px;
+        margin-bottom: -5px;
+        margin-right: -7px;
+      }
+
+      .link {
+        color: black;
+        text-decoration: none;
+      }
+
+      .fb_login {
+        padding-bottom: 10px;
+        color: rgb(4, 4, 122);
+      }
+
+      .fb_login a {
+        color: rgb(53, 103, 232);
+        font-weight: 50;
+      }
+
+      .sign_in {
+        padding-bottom: 10px;
+      }
+
+      .sign_in_link {
+        color: rgb(53, 103, 232);
+      }
+
+      .fb_login a {
+        font-weight: 50;
+      }
+
+      .getApp a {
+        color: rgb(53, 103, 232);
+      }
+
+      @media screen and (max-width: 800px) {
+        .container {
+          border: 1px solid
+            rgb(202, 201, 201);
+          border-radius: 5px;
+          background-color: rgba(
+            247,
+            247,
+            247,
+            0.356
+          );
+          width: 50%;
+          padding: 30px;
+          margin-top: 100px;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        .container {
+          border: 1px solid
+            rgb(202, 201, 201);
+          border-radius: 5px;
+          background-color: rgba(
+            247,
+            247,
+            247,
+            0.356
+          );
+          width: 20%;
+          padding: 30px;
+          margin-top: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            class="insta_logo"
+            src="insta_logo1.png"
+            alt="This is logo"
+          />
+        </div>
+      </header>
+      <section>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            ,
+            placeholder="Phone number, username or email address"
+          />
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            ,
+            placeholder="Password"
+          />
+          <br />
+          <input
+            id="log_in"
+            type="button"
+            value="Log in"
+          />
+        </form>
+        <p>OR</p>
+
+        <div class="fb_login">
+          <img
+            class="fb_logo"
+            src="fb_logo.png"
+            alt="fb logo"
+          />
+          <span>
+            <b>Log in with Facebook</b>
+          </span>
+          <p>
+            <a class="link" href="#"
+              ><b
+                >Forgot your
+                password?</b
+              ></a
+            >
+          </p>
+        </div>
+
+        <div class="sign_in">
+          <p>
+            Don't have an account?
+            <span
+              ><a
+                class="link sign_in_link"
+                href="#"
+                ><b>Sign up</b></a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="getApp">
+          Get the app.
+          <a class="link" href="#"
+            ><b>Google Play</b></a
+          >
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Profile</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        /* background-color: black; */
+        color: white;
+      }
+
+      .container {
+        border: 1px solid
+          rgb(202, 201, 201);
+        border-radius: 5px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.898
+        );
+        color: black;
+        width: 23%;
+        padding: 10px;
+        margin: auto;
+        margin-top: 100px;
+        height: 70vh;
+        overflow: auto;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .right {
+        display: flex;
+        padding: 20px;
+      }
+      .add-image img {
+        height: 15px;
+        width: 15px;
+      }
+      .dropDown img {
+        height: 15px;
+        width: 15px;
+      }
+      .story {
+        margin-right: 10px;
+      }
+      .user_img .image {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-bottom: 2px;
+      }
+      .user_info {
+        display: flex;
+        align-items: center;
+      }
+      .content {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .profile_edit {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+
+      .profile_edit button {
+        background-color: rgba(
+          156,
+          152,
+          152,
+          0.09
+        );
+        color: rgba(21, 9, 9, 0.847);
+        width: 200px;
+        padding: 5px;
+      }
+
+      .post {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        width: 80px;
+        border-bottom: 1px solid black;
+      }
+      .image_container {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+
+      .image_item {
+        margin-right: 10px;
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+      }
+
+      .image_item .img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="nav">
+        <div class="username">
+          <p>salina_thapa</p>
+        </div>
+        <div class="right">
+          <div class="add-image">
+            <img
+              class="story"
+              src="add_story.png"
+              alt="Add story"
+            />
+          </div>
+          <div class="dropDown">
+            <img
+              src="dropdown.png"
+              alt="dropdown"
+            />
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="user_info">
+          <div class="user_img_info">
+            <div class="user_img">
+              <img
+                src="salina.jpg"
+                alt="salina"
+                class="image"
+              />
+              <p>Salina</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="posts">
+              <p>1</p>
+              <p>Posts</p>
+            </div>
+            <div class="followers">
+              <p>214</p>
+              <p>Followers</p>
+            </div>
+            <div class="following">
+              <p>176</p>
+              <p>Following</p>
+            </div>
+          </div>
+        </div>
+        <div class="profile_edit">
+          <button>Edit Profile</button>
+          <button>Share Profile</button>
+        </div>
+        <div class="add_story">
+          <p>Story Highlights</p>
+          <p>
+            Keep your favourite stories
+            on your profile
+          </p>
+        </div>
+        <div class="photos">
+          <p class="post">Posts</p>
+          <div class="image_container">
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod1.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod2.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod1.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod1.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod1.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod1.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod1.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+            <div class="image_item">
+              <img
+                class="img"
+                src="pramod1.jpg"
+                alt="Pramod's Photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

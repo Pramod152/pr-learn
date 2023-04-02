@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "username": "pramod_ghimire1",
+    "password": "pramod@123",
+    "name": "Pramod Ghimire",
+    "posts": 3,
+    "followers": 200,
+    "following": 200,
+    "bio": "Life goes on and on",
+    "photos": [
+      "pramod1.jpg",
+      "pramod2.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "username": "john_doe1",
+    "password": "john@123",
+    "name": "John Doe",
+    "posts": 2,
+    "followers": 300,
+    "following": 300,
+    "bio": "work hard to get success",
+    "photos": ["john1.jpg", "john2.jpg"]
+  }
+]
